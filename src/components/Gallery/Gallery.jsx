@@ -13,14 +13,24 @@ export const Gallery = () => {
 
   function setBackgrounds() {
     imgRef.current.style.backgroundImage = `url(${imgs[index]})`;
+    paginationItems.current[index].classList.add('current');
 
     if (index > 0 && index < imgs.length - 1)
       leftBtnRef.current.style.backgroundImage = `url(${imgs[index - 1]})`;
+    if (index === 0) {
+      leftBtnRef.current.style.backgroundImage = `url(${imgs[index]})`;
+      rightBtnRef.current.style.backgroundImage = `url(${imgs[index + 1]})`;
+    }
     if (index < imgs.length - 1 && index >= 0)
       rightBtnRef.current.style.backgroundImage = `url(${imgs[index + 1]})`;
+
+    if (index === imgs.length - 1) {
+      leftBtnRef.current.style.backgroundImage = `url(${imgs[index - 1]})`;
+      rightBtnRef.current.style.backgroundImage = `url(${imgs[index]})`;
+    }
   }
 
-  async function leftClick(e) {
+  function leftClick(e) {
     if (index === 0) return;
     index -= 1;
     paginationItems.current[index].classList.add('current');
@@ -28,11 +38,17 @@ export const Gallery = () => {
     setBackgrounds();
   }
 
-  async function rightClick(e) {
+  function rightClick(e) {
     if (index === imgs.length - 1) return;
     index += 1;
     paginationItems.current[index - 1].classList.remove('current');
     paginationItems.current[index].classList.add('current');
+    setBackgrounds();
+  }
+
+  function pagiClick(e) {
+    paginationItems.current[index].classList.remove('current');
+    index = Number(e.target.id);
     setBackgrounds();
   }
 
@@ -51,9 +67,9 @@ export const Gallery = () => {
           <ul className="gallery__pagination" ref={paginationListRef}>
             {imgs.map((item, idx) =>
               idx === 0 ? (
-                <li className="current" key={item} id={idx}></li>
+                <li onClick={pagiClick} className="current" key={item} id={idx}></li>
               ) : (
-                <li key={item} id={idx}></li>
+                <li onClick={pagiClick} key={item} id={idx}></li>
               )
             )}
           </ul>
