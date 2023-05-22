@@ -1,9 +1,24 @@
 import { StyledHeader } from './Header.styled';
 import { MobileNav } from '../MobileNav/MobileNav';
 import { useRef } from 'react';
+// import { useEffect } from 'react';
+import { getLanguage, setLanguage } from '../../helpers/localStorage';
+import { getText } from '../../helpers/languages';
 
 export const Header = () => {
   const mobMenuRef = useRef();
+
+  const lang = getLanguage() || 'en';
+
+  function changeLanguage(e) {
+    if (lang === 'en') setLanguage('ua');
+    else setLanguage('en');
+    window.location.reload();
+  }
+
+  // useEffect(() => {
+  //   setLanguage('en');
+  // }, []);
 
   return (
     <StyledHeader>
@@ -11,17 +26,20 @@ export const Header = () => {
         <a href="/">Logo</a>
         <nav className="header__nav">
           <a href="/" className="header__link">
-            Gallery
+            {getText('gallery')}
           </a>
           <a href="/" className="header__link">
-            Process
+            {getText('process')}
           </a>
           <a href="/" className="header__link">
-            Price
+            {getText('price')}
           </a>
           <a href="/" className="header__link">
-            Contacts
+            {getText('contacts')}
           </a>
+          <button onClick={changeLanguage} className="header__language-btn" type="submit">
+            {lang === 'en' ? 'Ua' : 'En'}
+          </button>
         </nav>
         <button
           onClick={e => {
@@ -32,7 +50,7 @@ export const Header = () => {
           type="button"
         ></button>
       </div>
-      <MobileNav menuRef={mobMenuRef} />
+      <MobileNav menuRef={mobMenuRef} lan={lang} changeLan={changeLanguage} />
     </StyledHeader>
   );
 };

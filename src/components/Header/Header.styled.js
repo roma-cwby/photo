@@ -30,15 +30,29 @@ export const StyledHeader = styled.header`
     color: red;
 
     transition: color 300ms linear;
+    margin-right: 10px;
 
     &:hover,
     &:focus {
       color: green;
     }
   }
-
+  /* 
   .header__link:not(:last-of-type) {
     margin-right: 10px;
+  } */
+
+  .header__language-btn {
+    color: black;
+
+    transition: color 300ms linear;
+
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: red;
+    }
   }
 
   .header__mobile-btn {

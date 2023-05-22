@@ -1,22 +1,26 @@
 import { MobileNavWrap } from './MobileNav.styled';
+import { getText } from '../../helpers/languages';
 
-export const MobileNav = ({ menuRef }) => {
+export const MobileNav = ({ menuRef, lan, changeLan }) => {
   return (
     <MobileNavWrap ref={menuRef}>
       <div className="container">
         <nav className="mobile-nav">
           <a href="/" className="header__link">
-            Gallery
+            {getText('gallery')}
           </a>
           <a href="/" className="header__link">
-            Process
+            {getText('process')}
           </a>
           <a href="/" className="header__link">
-            Price
+            {getText('price')}
           </a>
           <a href="/" className="header__link">
-            Contacts
+            {getText('contacts')}
           </a>
+          <button onClick={changeLan} className="header__language-btn" type="submit">
+            {lan === 'en' ? 'Ua' : 'En'}
+          </button>
         </nav>
       </div>
     </MobileNavWrap>

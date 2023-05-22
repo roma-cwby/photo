@@ -1,0 +1,255 @@
+import { GallerySection } from './Gallery.styled';
+import { imgs } from '../../galleryImages';
+import { useRef, useEffect } from 'react';
+
+export const Gallery = () => {
+  let index = 0;
+  let paginationItems = useRef(null);
+
+  const paginationListRef = useRef();
+  const imgRef = useRef();
+  const leftBtnRef = useRef();
+  const rightBtnRef = useRef();
+
+  function setBackgrounds() {
+    imgRef.current.style.backgroundImage = `url(${imgs[index]})`;
+    paginationItems.current[index].classList.add('current');
+
+    if (index > 0 && index < imgs.length - 1)
+      leftBtnRef.current.style.backgroundImage = `url(${imgs[index - 1]})`;
+    if (index === 0) {
+      leftBtnRef.current.style.backgroundImage = `url(${imgs[index]})`;
+      rightBtnRef.current.style.backgroundImage = `url(${imgs[index + 1]})`;
+    }
+    if (index < imgs.length - 1 && index >= 0)
+      rightBtnRef.current.style.backgroundImage = `url(${imgs[index + 1]})`;
+
+    if (index === imgs.length - 1) {
+      leftBtnRef.current.style.backgroundImage = `url(${imgs[index - 1]})`;
+      rightBtnRef.current.style.backgroundImage = `url(${imgs[index]})`;
+    }
+  }
+
+  function leftClick(e) {
+    if (index === 0) return;
+    index -= 1;
+    paginationItems.current[index].classList.add('current');
+    paginationItems.current[index + 1].classList.remove('current');
+    setBackgrounds();
+  }
+
+  function rightClick(e) {
+    if (index === imgs.length - 1) return;
+    index += 1;
+    paginationItems.current[index - 1].classList.remove('current');
+    paginationItems.current[index].classList.add('current');
+    setBackgrounds();
+  }
+
+  function pagiClick(e) {
+    paginationItems.current[index].classList.remove('current');
+    index = Number(e.target.id);
+    setBackgrounds();
+  }
+
+  useEffect(() => {
+    paginationItems.current = Object.values(paginationListRef.current.children);
+  }, []);
+
+  return (
+    <GallerySection>
+      <div className="container gallery__container">
+        <div
+          ref={imgRef}
+          className="gallery__show"
+          style={{ backgroundImage: `url(${imgs[index]})` }}
+        >
+          <ul className="gallery__pagination" ref={paginationListRef}>
+            {imgs.map((item, idx) =>
+              idx === 0 ? (
+                <li onClick={pagiClick} className="current" key={item} id={idx}></li>
+              ) : (
+                <li onClick={pagiClick} key={item} id={idx}></li>
+              )
+            )}
+          </ul>
+          <button
+            ref={leftBtnRef}
+            onClick={leftClick}
+            className="gallery__left-btn"
+            type="button"
+            style={{ backgroundImage: `url(${imgs[0]})` }}
+          ></button>
+          <button
+            ref={rightBtnRef}
+            onClick={rightClick}
+            className="gallery__right-btn"
+            type="button"
+            style={{ backgroundImage: `url(${imgs[1]})` }}
+          ></button>
+        </div>
+      </div>
+    </GallerySection>
+  );
+};
+
+//===========================================
+import { GallerySection } from './Gallery.styled';
+import { imgs } from '../../galleryImages';
+import { useRef, useEffect } from 'react';
+
+export const Gallery = () => {
+  let index = 1;
+  let paginationItems = useRef(null);
+
+  const paginationListRef = useRef();
+  const imgRef = useRef();
+  const leftBtnRef = useRef();
+  const rightBtnRef = useRef();
+
+  function setBackgrounds() {
+    imgRef.current.style.backgroundImage = `url(${imgs[index]})`;
+    paginationItems.current[index].classList.add('current');
+
+    if (index > 0 && index < imgs.length - 1)
+      leftBtnRef.current.style.backgroundImage = `url(${imgs[index - 1]})`;
+    if (index === 0) {
+      leftBtnRef.current.style.backgroundImage = `url(${imgs[index]})`;
+      rightBtnRef.current.style.backgroundImage = `url(${imgs[index + 1]})`;
+    }
+    if (index < imgs.length - 1 && index >= 0)
+      rightBtnRef.current.style.backgroundImage = `url(${imgs[index + 1]})`;
+
+    if (index === imgs.length - 1) {
+      leftBtnRef.current.style.backgroundImage = `url(${imgs[index - 1]})`;
+      rightBtnRef.current.style.backgroundImage = `url(${imgs[index]})`;
+    }
+  }
+
+  function leftClick(e) {
+    if (index === 0) return;
+    index -= 1;
+    paginationItems.current[index].classList.add('current');
+    paginationItems.current[index + 1].classList.remove('current');
+    setBackgrounds();
+  }
+
+  function rightClick(e) {
+    if (index === imgs.length - 1) return;
+    index += 1;
+    paginationItems.current[index - 1].classList.remove('current');
+    paginationItems.current[index].classList.add('current');
+    setBackgrounds();
+  }
+
+  function pagiClick(e) {
+    paginationItems.current[index].classList.remove('current');
+    index = Number(e.target.id);
+    setBackgrounds();
+  }
+
+  useEffect(() => {
+    paginationItems.current = Object.values(paginationListRef.current.children);
+  }, []);
+
+  function setSlider(wi = 320) {
+    console.log(index);
+
+    paginationItems.current[index].classList.remove('left');
+
+    paginationItems.current[index].classList.remove('right');
+
+    paginationItems.current[index].classList.add('show');
+
+    if (index > 0 && index <= imgs.length - 1) {
+      paginationItems.current[index - 1].classList.remove('show');
+      paginationItems.current[index - 1].classList.remove('right');
+      paginationItems.current[index - 1].classList.add('left');
+    }
+
+    if (index < imgs.length - 1 && index >= 0) {
+      paginationItems.current[index + 1].classList.remove('show');
+      paginationItems.current[index + 1].classList.remove('left');
+      paginationItems.current[index + 1].classList.add('right');
+    }
+
+    if (index === 0) paginationListRef.current.style.transform = `translateX(${wi}px)`;
+    else if (index === imgs.length - 1)
+      paginationListRef.current.style.transform = `translateX(-${
+        (paginationListRef.current.scrollWidth / imgs.length) * index - wi
+      }px)`;
+    else
+      paginationListRef.current.style.transform = `translateX(-${
+        (paginationListRef.current.scrollWidth / imgs.length) * index - wi
+      }px)`;
+  }
+
+  function click(e) {
+    if (window.screen.width < 1200) return;
+    if (e.target.closest('li').classList.contains('show')) return;
+
+    index = Number(e.target.closest('li').id);
+    setSlider();
+  }
+
+  let x1 = 0;
+  let x2 = 0;
+
+  function swipe() {
+    if (x1 > x2) {
+      // if (index === imgs.length - 1) return;
+      if (index < imgs.length - 1) index += 1;
+      setSlider(window.screen.width < 768 ? 0 : 120);
+      return;
+    }
+    if (index > 0) index -= 1;
+    setSlider(window.screen.width < 768 ? 0 : 120);
+  }
+
+  return (
+    <GallerySection>
+      <div className="container gallery__container">
+        <ul
+          onTouchStart={e => (x1 = e.changedTouches[0].screenX)}
+          onTouchEnd={e => {
+            x2 = e.changedTouches[0].screenX;
+            swipe();
+          }}
+          ref={paginationListRef}
+          className="gallery__pagination-list"
+          style={{
+            transform: `translateX(-${
+              window.screen.width < 768 ? 463 : window.screen.width < 1280 ? 314 : 100
+            }px)`,
+          }}
+        >
+          {imgs.map((item, idx) => {
+            if (idx === 0)
+              return (
+                <li id={idx} className="gallery__pagination-item left" key={item}>
+                  <img onClick={click} src={item} alt={item} />
+                </li>
+              );
+            if (idx === 1)
+              return (
+                <li id={idx} className="gallery__pagination-item show" key={item}>
+                  <img onClick={click} src={item} alt={item} />
+                </li>
+              );
+            if (idx === 2)
+              return (
+                <li id={idx} className="gallery__pagination-item right" key={item}>
+                  <img onClick={click} src={item} alt={item} />
+                </li>
+              );
+            return (
+              <li id={idx} className="gallery__pagination-item" key={item}>
+                <img onClick={click} src={item} alt={item} />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </GallerySection>
+  );
+};
