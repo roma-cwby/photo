@@ -57,7 +57,7 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <GallerySection>
+    <GallerySection id="gallery">
       <div className="container gallery__container">
         <div
           ref={imgRef}

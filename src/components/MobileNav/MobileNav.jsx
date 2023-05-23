@@ -9,7 +9,7 @@ export const MobileNav = ({ menuRef, lan, changeLan }) => {
           <a href="#about" className="header__link">
             {getText('about')}
           </a>
-          <a href="/" className="header__link">
+          <a href="#gallery" className="header__link">
             {getText('gallery')}
           </a>
           <a href="/" className="header__link">
