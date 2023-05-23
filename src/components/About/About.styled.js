@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const AboutSection = styled.section`
-  min-height: 100vh;
   background: linear-gradient(45deg, var(--bg-pink-color) 50%, var(--bg-black-color) 50%);
 
   .about__container {
