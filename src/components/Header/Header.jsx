@@ -27,6 +27,9 @@ export const Header = () => {
           Logo
         </a>
         <nav className="header__nav">
+          <a href="#about" className="header__link">
+            {getText('about')}
+          </a>
           <a href="/" className="header__link">
             {getText('gallery')}
           </a>

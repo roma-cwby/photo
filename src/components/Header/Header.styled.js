@@ -37,7 +37,7 @@ export const StyledHeader = styled.header`
 
     &:hover,
     &:focus {
-      color: green;
+      color: var(--accent-color);
     }
   }
   /* 
@@ -54,7 +54,7 @@ export const StyledHeader = styled.header`
 
     &:hover,
     &:focus {
-      color: red;
+      color: var(--accent-color);
     }
   }
 

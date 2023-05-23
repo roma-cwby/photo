@@ -13,11 +13,6 @@ export const HeroSection = styled.section`
   .hero__container {
     min-height: inherit;
     position: relative;
-  }
-
-  .hero__wrap {
-    min-height: inherit;
-    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -25,42 +20,17 @@ export const HeroSection = styled.section`
   }
 
   .hero__title {
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 30px;
     color: var(--white-color);
     text-shadow: 1px 1px #000000;
 
     @media (min-width: 768px) {
-      font-size: 70px;
+      font-size: 40px;
     }
 
     @media (min-width: 1200px) {
-      font-size: 10vh;
-    }
-  }
-
-  .hero__text {
-    width: 100%;
-
-    padding: 10px;
-    font-size: 20px;
-
-    text-shadow: 1px 1px #000000;
-
-    margin-bottom: 30px;
-
-    border-radius: 20px;
-    border-left: 2px solid var(--white-color);
-    border-bottom: 2px solid var(--white-color);
-
-    color: var(--white-color);
-
-    @media (min-width: 768px) {
-      width: 50%;
-    }
-
-    @media (min-width: 1200px) {
-      font-size: 25px;
+      font-size: 50px;
     }
   }
 

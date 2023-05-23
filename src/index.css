@@ -4,6 +4,12 @@
   --header-link-color: #ffffff;
   --white-color: #ffffff;
   --accent-color: #ff0000;
+  --bg-black-color: #000000;
+  --bg-pink-color: #b80d3b;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {

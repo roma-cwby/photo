@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const GallerySection = styled.section`
-  background-color: seagreen;
+  height: 100vh;
+  background: linear-gradient(-45deg, var(--bg-black-color) 50%, var(--bg-pink-color) 50%);
 
   .gallery__container {
     display: flex;

@@ -6,6 +6,9 @@ export const MobileNav = ({ menuRef, lan, changeLan }) => {
     <MobileNavWrap ref={menuRef}>
       <div className="container">
         <nav className="mobile-nav">
+          <a href="#about" className="header__link">
+            {getText('about')}
+          </a>
           <a href="/" className="header__link">
             {getText('gallery')}
           </a>

@@ -1,6 +1,10 @@
 import { getLanguage } from './localStorage';
 
 const text = {
+  about: {
+    en: 'About ',
+    ua: 'Про мене',
+  },
   gallery: {
     en: 'Gallery',
     ua: 'Галерея',
@@ -17,13 +21,13 @@ const text = {
     en: 'Contacts',
     ua: 'Контакти',
   },
-  heroTitle: {
-    en: 'Greetings! I am Lilia',
-    ua: 'Вітаю! Я Лілія',
+  aboutSpan: {
+    en: 'me',
+    ua: 'мене',
   },
-  heroText: {
-    en: 'A photographer who captures your uniqueness in the moment. My mission is to reveal the truth, showcase depth, and inspire love. I invite you to my world of photography, share your desires with me, and we will bring them to life together!',
-    ua: 'Фотограф, який побачить та упіймає в моменті твою унікальність. Моя місія - розкрити справжнє, показати глибину та закохати. Запрошую тебе в мій світ фотографії, розкажи мені свої бажання і ми втілимо їх разом!',
+  aboutText: {
+    en: 'Greetings! I am Lilia a photographer who captures your uniqueness in the moment. My mission is to reveal the truth, showcase depth, and inspire love. I invite you to my world of photography, share your desires with me, and we will bring them to life together!',
+    ua: 'Вітаю! Я Лілія, фотограф, який побачить та упіймає в моменті твою унікальність. Моя місія - розкрити справжнє, показати глибину та закохати. Запрошую тебе в мій світ фотографії, розкажи мені свої бажання і ми втілимо їх разом!',
   },
 };
 
