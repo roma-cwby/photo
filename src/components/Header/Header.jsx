@@ -23,7 +23,9 @@ export const Header = () => {
   return (
     <StyledHeader>
       <div className="container header__container">
-        <a href="/">Logo</a>
+        <a className="header__logo" href="/">
+          Logo
+        </a>
         <nav className="header__nav">
           <a href="/" className="header__link">
             {getText('gallery')}

@@ -2,28 +2,26 @@ import styled from 'styled-components';
 
 export const MobileNavWrap = styled.div`
   position: absolute;
-  left: 20%;
-  bottom: -190%;
-  width: 80%;
-  z-index: 10;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
 
   display: block;
-
-  height: 100px;
 
   background-color: transparent;
   backdrop-filter: blur(5px);
 
   transition: transform 300ms linear;
 
-  transform: translateX(101%);
+  transform: translateY(-201%);
 
   @media (min-width: 768px) {
     display: none;
   }
 
   &.open {
-    transform: translateX(0);
+    transform: translateY(100%);
   }
 
   .mobile-nav .header__link {
