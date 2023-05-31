@@ -9,8 +9,8 @@ export const MobileNavWrap = styled.div`
 
   display: block;
 
-  background-color: transparent;
-  backdrop-filter: blur(5px);
+  background-color: #00000090;
+  /* backdrop-filter: blur(5px); */
 
   transition: transform 300ms linear;
 

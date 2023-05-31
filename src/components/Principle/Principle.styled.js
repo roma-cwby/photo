@@ -1,75 +1,136 @@
 import styled from 'styled-components';
 
 export const PrinciplesSection = styled.section`
-  min-height: 100vh;
+  height: auto;
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @media (min-width: 1200px) {
+    height: 100vh;
+  }
+
+  background-color: white;
 
   .principles__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    height: 100%;
+    background-color: transparent;
 
-    min-height: inherit;
-
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    h2 {
-      font-size: 25px;
-      width: 80%;
-      display: inline;
-      color: var(--bg-pink-color);
-      text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
-      margin-bottom: 20px;
-
-      @media (min-width: 1200px) {
-        width: 40%;
-      }
-    }
-
-    ul {
+    .principles__list {
+      height: 100%;
       width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
 
-      border-bottom-right-radius: 20px;
-      border-bottom: 2px solid var(--bg-pink-color);
-      border-right: 2px solid var(--bg-pink-color);
+      display: block;
 
-      @media (min-width: 1200px) {
-        flex-wrap: nowrap;
-        border: none;
+      @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
       }
 
       li {
-        color: var(--white-color);
-        font-size: 20px;
-        padding: 10px;
         width: 100%;
-        text-shadow: 1px 1px #000000;
+        height: 400px;
 
         @media (min-width: 768px) {
-          width: calc(100% / 2);
+          width: 50%;
+          height: 300px;
         }
 
         @media (min-width: 1200px) {
-          width: calc(100% / 5);
+          width: 50%;
+          height: 50%;
+        }
+      }
 
-          &:first-of-type {
-            border-bottom-left-radius: 20px;
-            border-bottom: 2px solid var(--bg-pink-color);
-            border-left: 2px solid var(--bg-pink-color);
+      .item__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 20px;
+
+        h2 {
+          font-size: 30px;
+          font-weight: 300;
+
+          @media (min-width: 1200px) {
+            font-size: 40px;
           }
+        }
+      }
 
-          &:last-of-type {
-            border-top-right-radius: 20px;
-            border-top: 2px solid var(--bg-pink-color);
-            border-right: 2px solid var(--bg-pink-color);
+      .item__photo {
+        img {
+          height: 100%;
+
+          object-fit: cover;
+        }
+      }
+
+      .item__photo:nth-child(2) {
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+        }
+      }
+
+      .item__text {
+        display: flex;
+        flex-wrap: wrap;
+
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        p {
+          width: 50%;
+          height: calc(100% / 5 * 2);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 10px;
+
+          animation: show 15s linear infinite;
+
+          color: transparent;
+
+          transition: background-color 500ms linear;
+
+          background-color: transparent;
+        }
+
+        p:last-of-type {
+          width: 100%;
+          height: calc(100% / 5);
+        }
+
+        p:nth-child(2) {
+          animation-delay: 1s;
+        }
+        p:nth-child(3) {
+          animation-delay: 2s;
+        }
+        p:nth-child(4) {
+          animation-delay: 3s;
+        }
+        p:nth-child(5) {
+          animation-delay: 4s;
+        }
+
+        @keyframes show {
+          0% {
+            background-color: transparent;
+            color: transparent;
+          }
+          30% {
+            background-color: #ffffff;
+            color: #000000;
+          }
+          70% {
+            background-color: #ffffff;
+            color: #000000;
+          }
+          100% {
+            background-color: transparent;
+            color: transparent;
           }
         }
       }

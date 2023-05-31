@@ -1,13 +1,23 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
 
   font-size: 20px;
+  background-color: transparent;
+
+  transition: background-color var(--transition), background-filter var(--transition);
+
+  backdrop-filter: blur(5px);
+
+  &.open {
+    background-color: #00000090;
+    backdrop-filter: none;
+  }
 
   .header__container {
     display: flex;
@@ -19,6 +29,7 @@ export const StyledHeader = styled.header`
 
   .header__logo {
     color: var(--header-link-color);
+    -webkit-text-stroke: 1px silver;
   }
 
   .header__nav {
@@ -31,6 +42,7 @@ export const StyledHeader = styled.header`
 
   .header__link {
     color: var(--header-link-color);
+    -webkit-text-stroke: 1px silver;
 
     transition: color 300ms linear;
     margin-right: 10px;
@@ -51,6 +63,7 @@ export const StyledHeader = styled.header`
     transition: color 300ms linear;
 
     background-color: transparent;
+    -webkit-text-stroke: 1px silver;
 
     &:hover,
     &:focus {
@@ -77,11 +90,12 @@ export const StyledHeader = styled.header`
       content: '';
       display: inline-block;
       width: 20px;
-      height: 5px;
+      height: 4px;
 
       transition: all 300ms linear;
 
       border-radius: 5px;
+      outline: 1px solid silver;
 
       background-color: var(--header-link-color);
     }
@@ -93,11 +107,12 @@ export const StyledHeader = styled.header`
       content: '';
       display: inline-block;
       width: 20px;
-      height: 5px;
+      height: 4px;
 
       transition: all 300ms linear;
 
       border-radius: 5px;
+      outline: 1px solid silver;
 
       background-color: var(--header-link-color);
     }
@@ -107,6 +122,7 @@ export const StyledHeader = styled.header`
       top: 40%;
       width: 28px;
       transform: rotate(45deg);
+      outline: none;
     }
 
     &.open::after {
@@ -114,6 +130,7 @@ export const StyledHeader = styled.header`
       bottom: 40%;
       width: 28px;
       transform: rotate(-45deg);
+      outline: none;
     }
   }
 `;

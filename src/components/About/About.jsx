@@ -1,18 +1,23 @@
 import { AboutSection } from './About.styled';
-import img from '../../img/about.jpg';
+import img from '../../img/27.jpg';
+import textImg from '../../img/20.jpg';
 import { getText } from '../../helpers/languages';
+import { Social } from '../Social/Social';
 
 export const About = () => {
   return (
     <AboutSection id="about">
       <div className="container about__container">
-        <div className="about__description">
+        <img src={img} alt="me" />
+        <div className="about__text">
           <h2>
-            {getText('about')} <span>{getText('aboutSpan')}</span>
+            {getText('about')}
+            {getText('aboutSpan')}
           </h2>
           <p>{getText('aboutText')}</p>
+          <Social Class="about__social" />
+          <img src={textImg} alt="me" />
         </div>
-        <img className="about__img" src={img} alt="about" />
       </div>
     </AboutSection>
   );

@@ -7,6 +7,8 @@ import { getText } from '../../helpers/languages';
 
 export const Header = () => {
   const mobMenuRef = useRef();
+  const sectionRef = useRef();
+  const btnRef = useRef();
 
   const lang = getLanguage() || 'en';
 
@@ -16,12 +18,14 @@ export const Header = () => {
     window.location.reload();
   }
 
-  // useEffect(() => {
-  //   setLanguage('en');
-  // }, []);
+  function toggleOpen() {
+    btnRef.current.classList.toggle('open');
+    mobMenuRef.current.classList.toggle('open');
+    sectionRef.current.classList.toggle('open');
+  }
 
   return (
-    <StyledHeader>
+    <StyledHeader ref={sectionRef}>
       <div className="container header__container">
         <a className="header__logo" href="/">
           Logo
@@ -47,15 +51,13 @@ export const Header = () => {
           </button>
         </nav>
         <button
-          onClick={e => {
-            e.target.classList.toggle('open');
-            mobMenuRef.current.classList.toggle('open');
-          }}
+          ref={btnRef}
+          onClick={toggleOpen}
           className="header__mobile-btn"
           type="button"
         ></button>
       </div>
-      <MobileNav menuRef={mobMenuRef} lan={lang} changeLan={changeLanguage} />
+      <MobileNav menuRef={mobMenuRef} lan={lang} changeLan={changeLanguage} close={toggleOpen} />
     </StyledHeader>
   );
 };

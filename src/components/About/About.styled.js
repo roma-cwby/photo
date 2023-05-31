@@ -1,60 +1,87 @@
 import styled from 'styled-components';
 
 export const AboutSection = styled.section`
-  background: linear-gradient(45deg, var(--bg-pink-color) 50%, var(--bg-black-color) 50%);
+  min-height: 100vh;
+
+  background: linear-gradient(45deg, #000010, #100010);
 
   .about__container {
+    min-height: inherit;
+
     @media (min-width: 768px) {
       display: flex;
-    }
-  }
-
-  .about__description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-    padding-bottom: 20px;
-
-    h2 {
-      font-size: 60px;
-      color: var(--white-color);
-      margin-bottom: 10px;
-
-      span {
-        color: var(--bg-pink-color);
-        text-shadow: -1px 1px 0 var(--white-color), 1px 1px 0 var(--white-color),
-          1px -1px 0 var(--white-color), -1px -1px 0 var(--white-color);
-      }
+      align-items: center;
+      justify-content: space-between;
     }
 
-    p {
-      width: 90%;
-      font-size: 20px;
-
-      color: var(--white-color);
-      @media (min-width: 1200px) {
-        width: 80%;
-      }
-
-      @media (min-width: 1200px) {
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
         width: 50%;
+        margin: 0;
       }
     }
-  }
 
-  .about__img {
-    width: 100%;
-    border-radius: 5px;
-    object-fit: cover;
-    object-position: right;
+    .about__text {
+      width: 100%;
 
-    @media (min-width: 768px) {
-      object-position: center;
-      width: 40%;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
+      @media (min-width: 768px) {
+        width: 45%;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 50px;
+        color: var(--white-color);
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        color: #ffffff99;
+        margin-bottom: 30px;
+      }
+
+      .about__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 30px;
+
+        @media (min-width: 768px) {
+          display: block;
+        }
+
+        a {
+          svg {
+            width: 50px;
+
+            @media (min-width: 768px) {
+              width: 40px;
+            }
+
+            @media (min-width: 1200px) {
+              width: 30px;
+            }
+          }
+        }
+
+        a:not(:last-of-type) {
+          margin-right: 15px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 200px;
+
+        object-fit: cover;
+        object-position: center;
+      }
     }
   }
 `;
