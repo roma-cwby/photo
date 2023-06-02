@@ -34,5 +34,17 @@ export const HeroSection = styled.section`
     @media (min-width: 1200px) {
       font-size: 50px;
     }
+
+    span {
+      font-size: 20px;
+
+      @media (min-width: 768px) {
+        font-size: 25px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 30px;
+      }
+    }
   }
 `;

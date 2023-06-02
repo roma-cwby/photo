@@ -79,6 +79,11 @@ export const PrinciplesSection = styled.section`
         background-repeat: no-repeat;
         background-size: cover;
 
+        &.show p {
+          color: #000000;
+          background-color: #ffffff;
+        }
+
         p {
           width: 50%;
           height: calc(100% / 5 * 2);
@@ -92,7 +97,7 @@ export const PrinciplesSection = styled.section`
 
           color: transparent;
 
-          transition: background-color 500ms linear;
+          transition: background-color var(--transition), color var(--transition);
 
           background-color: transparent;
         }
@@ -103,35 +108,16 @@ export const PrinciplesSection = styled.section`
         }
 
         p:nth-child(2) {
-          animation-delay: 1s;
+          transition-delay: 200ms;
         }
         p:nth-child(3) {
-          animation-delay: 2s;
+          transition-delay: 400ms;
         }
         p:nth-child(4) {
-          animation-delay: 3s;
+          transition-delay: 600ms;
         }
         p:nth-child(5) {
-          animation-delay: 4s;
-        }
-
-        @keyframes show {
-          0% {
-            background-color: transparent;
-            color: transparent;
-          }
-          30% {
-            background-color: #ffffff;
-            color: #000000;
-          }
-          70% {
-            background-color: #ffffff;
-            color: #000000;
-          }
-          100% {
-            background-color: transparent;
-            color: transparent;
-          }
+          transition-delay: 800ms;
         }
       }
     }

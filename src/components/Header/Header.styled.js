@@ -49,6 +49,7 @@ export const StyledHeader = styled.header`
 
     &:hover,
     &:focus {
+      -webkit-text-stroke: 0;
       color: var(--accent-color);
     }
   }
@@ -60,7 +61,7 @@ export const StyledHeader = styled.header`
   .header__language-btn {
     color: var(--header-link-color);
 
-    transition: color 300ms linear;
+    transition: color var(--transition);
 
     background-color: transparent;
     -webkit-text-stroke: 1px silver;
@@ -68,6 +69,7 @@ export const StyledHeader = styled.header`
     &:hover,
     &:focus {
       color: var(--accent-color);
+      -webkit-text-stroke: 0;
     }
   }
 
