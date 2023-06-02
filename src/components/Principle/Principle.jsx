@@ -14,16 +14,8 @@ export const Principles = () => {
       textRef.current.offsetTop - textRef.current.offsetHeight
     ) {
       textRef.current.classList.add('show');
+      window.removeEventListener('scroll', scroll);
     }
-    if (
-      e.target.scrollingElement.scrollTop -
-        (textRef.current.offsetTop - textRef.current.offsetHeight) >
-        400 ||
-      e.target.scrollingElement.scrollTop -
-        (textRef.current.offsetTop - textRef.current.offsetHeight) <
-        -200
-    )
-      textRef.current.classList.remove('show');
   }
 
   useEffect(() => {
