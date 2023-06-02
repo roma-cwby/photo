@@ -10,9 +10,8 @@ export const Principles = () => {
 
   function scroll(e) {
     if (
-      e.target.scrollingElement.scrollTop -
-        (textRef.current.offsetTop - textRef.current.offsetHeight) <
-      -100
+      e.target.scrollingElement.scrollTop >=
+      textRef.current.offsetTop - textRef.current.offsetHeight
     ) {
       textRef.current.classList.add('show');
     }
