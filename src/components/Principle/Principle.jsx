@@ -18,7 +18,7 @@ export const Principles = () => {
     if (
       e.target.scrollingElement.scrollTop -
         (textRef.current.offsetTop - textRef.current.offsetHeight) >
-        100 ||
+        400 ||
       e.target.scrollingElement.scrollTop -
         (textRef.current.offsetTop - textRef.current.offsetHeight) <
         -200
