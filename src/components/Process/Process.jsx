@@ -5,6 +5,7 @@ import { getText } from '../../helpers/languages';
 export const Process = () => {
   return (
     <ProcessSection
+      id="process"
       style={{ backgroundImage: `linear-gradient( #ffffff 10%, #ffffff30 100%) , url(${bgImg})` }}
     >
       <div className="container section__container">

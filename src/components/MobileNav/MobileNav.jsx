@@ -12,7 +12,7 @@ export const MobileNav = ({ menuRef, lan, changeLan, close }) => {
           <a onClick={close} href="#gallery" className="header__link">
             {getText('gallery')}
           </a>
-          <a onClick={close} href="/" className="header__link">
+          <a onClick={close} href="#process" className="header__link">
             {getText('process')}
           </a>
           <a onClick={close} href="/" className="header__link">

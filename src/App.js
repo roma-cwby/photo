@@ -3,6 +3,7 @@ import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
 import { Principles } from './components/Principle/Principle';
 import { Process } from './components/Process/Process';
+import { Pricing } from './components/Pricing/Pricing';
 import { Gallery } from './components/Gallery/Gallery';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Principles />
       <Process />
+      <Pricing />
       <Gallery />
     </>
   );

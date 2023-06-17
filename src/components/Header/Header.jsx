@@ -37,7 +37,7 @@ export const Header = () => {
           <a href="#gallery" className="header__link">
             {getText('gallery')}
           </a>
-          <a href="/" className="header__link">
+          <a href="#process" className="header__link">
             {getText('process')}
           </a>
           <a href="/" className="header__link">

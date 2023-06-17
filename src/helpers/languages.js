@@ -73,6 +73,62 @@ const text = {
     en: 'Shooting, editing, and delivering the final photos',
     ua: 'Зйомка, обробка, видача готових фото',
   },
+  pricingTitle: {
+    en: 'Packages',
+    ua: 'Пакети послуг',
+  },
+  package1Title: {
+    en: 'Package 1',
+    ua: 'Пакет 1',
+  },
+  package11: {
+    en: '1 hour of shooting',
+    ua: '1 год зйомки',
+  },
+  package12: {
+    en: '30 photos with color correction and professional retouching',
+    ua: '30 фото в кольорокорекції та професійній ретуші',
+  },
+  package13: {
+    en: 'The shooting includes one look, one location, and studio rental is paid separately',
+    ua: 'Зйомка передбачає один образ, виїзд на одну локацію, студія оплачується окремо',
+  },
+  package2Title: {
+    en: 'Package 2',
+    ua: 'Пакет 2',
+  },
+  package21: {
+    en: '2 hours of shooting',
+    ua: '2 год зйомки',
+  },
+  package22: {
+    en: '50 photos with color correction and professional retouching',
+    ua: '50 фото в кольорокорекції та професійній ретуші',
+  },
+  package23: {
+    en: 'The shooting includes 1/2 looks, one/two locations, and studio rental is paid separately',
+    ua: 'Зйомка передбачає 1/2 образи, одна/дві локації, студія оплачується окремо',
+  },
+  package3Title: {
+    en: 'Package 3',
+    ua: 'Пакет 3',
+  },
+  package31: {
+    en: '4 hours of shooting',
+    ua: '4 год зйомки',
+  },
+  package32: {
+    en: '70 photos with color correction and professional retouching',
+    ua: '70 фото в кольорокорекції та професійній ретуші',
+  },
+  package33: {
+    en: 'The shooting includes portrait and product photography, 2/3 looks, studio + 1 location, and studio rental is paid separately',
+    ua: 'Зйомка передбачає портретну/предметну зйомку, 2/3 образи, студія +1 локація, студія оплачується окремо',
+  },
+  package34: {
+    en: 'This can be a content shoot for you as a professional/your product to fill your profile for a month ahead',
+    ua: 'Це може бути контент зйомка для вас як професіонала/ вашого продукту для заповнення профілю на місяць вперед',
+  },
 };
 
 const lang = getLanguage() === 'ua' ? true : false;
