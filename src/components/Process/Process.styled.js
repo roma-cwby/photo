@@ -36,12 +36,17 @@ export const ProcessSection = styled.section`
 
         margin-bottom: 20px;
 
-        border-bottom: 1px solid #000000;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #000000;
+        }
 
         @media (min-width: 768px) {
           width: calc(100% / 2);
-          border: none;
           height: 200px;
+
+          &:not(:last-of-type) {
+            border: none;
+          }
         }
 
         @media (min-width: 1200px) {

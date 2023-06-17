@@ -5,7 +5,7 @@ import { getText } from '../../helpers/languages';
 export const Process = () => {
   return (
     <ProcessSection
-      style={{ backgroundImage: `linear-gradient( #ffffff 10%, transparent 100%) , url(${bgImg})` }}
+      style={{ backgroundImage: `linear-gradient( #ffffff 10%, #ffffff30 100%) , url(${bgImg})` }}
     >
       <div className="container section__container">
         <h2>{getText('processTitle')}</h2>
