@@ -24,7 +24,7 @@ export const Principles = () => {
     return () => {
       window.removeEventListener('scroll', scroll);
     };
-  }, []);
+  }, [scroll]);
 
   return (
     <PrinciplesSection>

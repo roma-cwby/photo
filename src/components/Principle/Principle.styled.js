@@ -47,8 +47,12 @@ export const PrinciplesSection = styled.section`
         padding: 20px;
 
         h2 {
-          font-size: 30px;
+          font-size: 25px;
           font-weight: 300;
+
+          @media (min-width: 768px) {
+            font-size: 30px;
+          }
 
           @media (min-width: 1200px) {
             font-size: 40px;
@@ -91,7 +95,9 @@ export const PrinciplesSection = styled.section`
           display: flex;
           align-items: center;
           justify-content: center;
+          text-align: center;
           padding: 0 10px;
+          font-size: 15px;
 
           animation: show 15s linear infinite;
 
@@ -100,6 +106,15 @@ export const PrinciplesSection = styled.section`
           transition: background-color var(--transition), color var(--transition);
 
           background-color: transparent;
+
+          @media (max-width: 400px) {
+            width: 100%;
+            height: calc(100% / 5);
+          }
+
+          @media (min-width: 1200px) {
+            font-size: 20px;
+          }
         }
 
         p:last-of-type {
