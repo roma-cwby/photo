@@ -7,7 +7,7 @@ import { BsFillClipboardCheckFill } from 'react-icons/bs';
 
 export const Pricing = () => {
   return (
-    <PricingSection>
+    <PricingSection id="pricing">
       <div className="container pricing__container">
         <h2>{getText('pricingTitle')}</h2>
         <ul>

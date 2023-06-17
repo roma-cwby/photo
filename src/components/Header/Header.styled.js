@@ -33,7 +33,8 @@ export const StyledHeader = styled.header`
   }
 
   .header__nav {
-    display: block;
+    display: flex;
+    align-items: center;
 
     @media (max-width: 768px) {
       display: none;
@@ -59,17 +60,18 @@ export const StyledHeader = styled.header`
   } */
 
   .header__language-btn {
-    color: var(--header-link-color);
+    width: 25px;
+    height: 25px;
 
-    transition: color var(--transition);
+    border-radius: 50%;
 
-    background-color: transparent;
-    -webkit-text-stroke: 1px silver;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
-      -webkit-text-stroke: 0;
+      cursor: pointer;
     }
   }
 

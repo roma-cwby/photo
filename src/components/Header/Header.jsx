@@ -1,9 +1,10 @@
 import { StyledHeader } from './Header.styled';
 import { MobileNav } from '../MobileNav/MobileNav';
 import { useRef } from 'react';
-// import { useEffect } from 'react';
 import { getLanguage, setLanguage } from '../../helpers/localStorage';
 import { getText } from '../../helpers/languages';
+import ukFlag from '../../img/uk.jpg';
+import uaFlag from '../../img/ua.jpg';
 
 export const Header = () => {
   const mobMenuRef = useRef();
@@ -40,15 +41,18 @@ export const Header = () => {
           <a href="#process" className="header__link">
             {getText('process')}
           </a>
-          <a href="/" className="header__link">
+          <a href="#pricing" className="header__link">
             {getText('price')}
           </a>
           <a href="/" className="header__link">
             {getText('contacts')}
           </a>
-          <button onClick={changeLanguage} className="header__language-btn" type="submit">
-            {lang === 'en' ? 'Ua' : 'En'}
-          </button>
+          <button
+            onClick={changeLanguage}
+            className="header__language-btn"
+            type="submit"
+            style={{ backgroundImage: `url(${lang === 'en' ? uaFlag : ukFlag})` }}
+          ></button>
         </nav>
         <button
           ref={btnRef}

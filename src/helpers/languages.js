@@ -14,8 +14,8 @@ const text = {
     ua: 'Процес',
   },
   price: {
-    en: 'Price',
-    ua: 'Ціна',
+    en: 'Pricing',
+    ua: 'Ціни',
   },
   contacts: {
     en: 'Contacts',
