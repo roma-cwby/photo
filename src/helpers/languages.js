@@ -53,6 +53,26 @@ const text = {
     en: 'I will provide references for you and help with posing during the shoot',
     ua: 'Підберу референси для вас, допоможу з позуванням під час зйомки',
   },
+  processTitle: {
+    en: 'Stages of work',
+    ua: 'Етапи роботи',
+  },
+  processCard1: {
+    en: 'Introduction',
+    ua: 'Знайомство',
+  },
+  processCard2: {
+    en: 'Defining the shooting concept: idea, location, style, discussing all details of your request',
+    ua: 'Визначення концепції зйомки: ідея, локація, образ, обговорюємо всі деталі вашого запиту',
+  },
+  processCard3: {
+    en: 'Creating a mood board to be used during the shoot',
+    ua: 'Створення мудборду, яким користуватимемося на зйомці',
+  },
+  processCard4: {
+    en: 'Shooting, editing, and delivering the final photos',
+    ua: 'Зйомка, обробка, видача готових фото',
+  },
 };
 
 const lang = getLanguage() === 'ua' ? true : false;
