@@ -28,7 +28,7 @@ export const PricingSection = styled.section`
 
         border-radius: 50px;
         background-color: #101010;
-        box-shadow: 5px 5px 10px #202020, -5px -5px 10px #000000;
+        box-shadow: 5px 5px 10px #000000, -5px -5px 10px #202020;
 
         &:not(:last-of-type) {
           margin-bottom: 20px;
@@ -87,7 +87,7 @@ export const PricingSection = styled.section`
             top: -5px;
             left: 0;
 
-            fill: green;
+            fill: #00ff00;
             min-width: 30px;
             min-height: 30px;
             /* margin-right: 10px; */

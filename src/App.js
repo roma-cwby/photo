@@ -15,7 +15,7 @@ function App() {
       <Principles />
       <Process />
       <Pricing />
-      <Gallery />
+      {/* <Gallery /> */}
     </>
   );
 }
