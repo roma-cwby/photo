@@ -12,7 +12,7 @@ export const GallerySection = styled.section`
 
   .gallery__grid {
     height: fit-content;
-    width: calc(100% - 50vh - 20px);
+    width: 50%;
     background-color: transparent;
 
     display: flex;
