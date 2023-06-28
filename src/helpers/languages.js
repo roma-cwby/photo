@@ -25,6 +25,10 @@ const text = {
     en: ' me',
     ua: ' мене',
   },
+  likes: {
+    en: 'likes',
+    ua: 'вподобання',
+  },
   aboutText: {
     en: 'Hello! I am Lilia, a photographer who captures your uniqueness in the moment. My mission is to reveal the truth, showcase depth, and inspire love in the photo. I invite you to my world of photography, share your desires with me, and we will bring them to life together!',
     ua: 'Вітаю! Я Лілія - фотограф, який побачить та упіймає в моменті твою унікальність. Моя місія - розкрити справжнє у фотографії, показати глибину та закохати. Запрошую тебе до мене на зйомку! Поділись  своїми бажаннями і ми втілимо їх разом!',

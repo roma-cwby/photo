@@ -11,11 +11,11 @@ export const MobileNav = ({ menuRef, lan, changeLan, close }) => {
           <a onClick={close} href="#about" className="header__link">
             {getText('about')}
           </a>
-          <a onClick={close} href="#gallery" className="header__link">
-            {getText('gallery')}
-          </a>
           <a onClick={close} href="#process" className="header__link">
             {getText('process')}
+          </a>
+          <a onClick={close} href="#gallery" className="header__link">
+            {getText('gallery')}
           </a>
           <a onClick={close} href="#pricing" className="header__link">
             {getText('price')}

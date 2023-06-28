@@ -77,10 +77,14 @@ export const AboutSection = styled.section`
 
       img {
         width: 100%;
-        height: 200px;
+        height: 180px;
 
         object-fit: cover;
         object-position: center;
+
+        @media (min-width: 1200px) {
+          height: 200px;
+        }
       }
     }
   }

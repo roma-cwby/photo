@@ -35,11 +35,11 @@ export const Header = () => {
           <a href="#about" className="header__link">
             {getText('about')}
           </a>
-          <a href="#gallery" className="header__link">
-            {getText('gallery')}
-          </a>
           <a href="#process" className="header__link">
             {getText('process')}
+          </a>
+          <a href="#gallery" className="header__link">
+            {getText('gallery')}
           </a>
           <a href="#pricing" className="header__link">
             {getText('price')}

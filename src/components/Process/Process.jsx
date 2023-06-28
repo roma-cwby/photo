@@ -6,7 +6,9 @@ export const Process = () => {
   return (
     <ProcessSection
       id="process"
-      style={{ backgroundImage: `linear-gradient( #ffffff 10%, #ffffff30 100%) , url(${bgImg})` }}
+      style={{
+        backgroundImage: `linear-gradient( #ffffff 10%, #ffffff30 80%, #ffffff 100%) , url(${bgImg})`,
+      }}
     >
       <div className="container section__container">
         <h2>{getText('processTitle')}</h2>
