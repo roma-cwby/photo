@@ -12,9 +12,8 @@ export const GallerySection = styled.section`
 
   .gallery__grid {
     height: fit-content;
-    width: 50%;
     background-color: transparent;
-
+    max-width: calc(50% - 10px);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -22,8 +21,8 @@ export const GallerySection = styled.section`
     li {
       overflow: hidden;
 
-      width: calc(80vh / 8);
-      height: calc(80vh / 8);
+      width: calc(100% / 6 - 5px);
+      aspect-ratio: 1 / 1;
 
       margin-bottom: 5px;
 
@@ -48,7 +47,8 @@ export const GallerySection = styled.section`
   .gallery__phone {
     position: relative;
 
-    width: 45vh;
+    min-width: 45vh;
+    max-width: 45vh;
     height: 90vh;
 
     padding: 1.5vh;
@@ -192,6 +192,7 @@ export const GallerySection = styled.section`
 
         top: 50%;
         left: 50%;
+        z-index: 1;
 
         opacity: 0;
 
