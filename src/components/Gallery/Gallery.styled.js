@@ -7,7 +7,35 @@ export const GallerySection = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+
+    @media (min-width: 768px) {
+      padding-top: 30px;
+    }
+
+    .mobile-gallery__list {
+      display: flex;
+      /* flex-direction: row; */
+      /* flex-wrap: nowrap; */
+
+      width: 100%;
+      aspect-ratio: 1 / 1.8;
+
+      background-color: black;
+
+      overflow-y: hidden;
+      overflow-x: scroll;
+
+      li {
+        min-width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
   }
 
   .gallery__grid {

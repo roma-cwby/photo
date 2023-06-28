@@ -43,55 +43,70 @@ export const Gallery = () => {
     e.target.closest('li').classList.toggle('like');
   }
 
-  return (
-    <GallerySection id="gallery">
-      <div className="container gallery__container">
-        <ul className="gallery__grid">
-          {imgs.map((item, idx) => (
-            <li key={item} id={idx}>
-              <img loading="lazy" onClick={imgClick} src={item} alt={item} />
-            </li>
-          ))}
-        </ul>
-        <div className="gallery__phone">
-          <div className="gallery__phone-info">
-            <p>{instaTime()}</p>
-            <div className="gallery__phone-info-icons">
-              <BiSignal4 />
-              <BiWifi2 />
-              <CiBatteryFull />
+  if (window.screen.width >= 768)
+    return (
+      <GallerySection id="gallery">
+        <div className="container gallery__container">
+          <ul className="gallery__grid">
+            {imgs.map((item, idx) => (
+              <li key={item} id={idx}>
+                <img loading="lazy" onClick={imgClick} src={item} alt={item} />
+              </li>
+            ))}
+          </ul>
+          <div className="gallery__phone">
+            <div className="gallery__phone-info">
+              <p>{instaTime()}</p>
+              <div className="gallery__phone-info-icons">
+                <BiSignal4 />
+                <BiWifi2 />
+                <CiBatteryFull />
+              </div>
             </div>
-          </div>
-          <ul ref={screenRef} className="gallery__phone-screen">
-            {imgs.map(item => (
-              <li key={item} className="gallery__post">
-                <div className="gallery__post-head">
-                  <div style={{ backgroundColor: '#000000' }}></div>
-                  <p>
-                    {instaImages.map(imgs => {
-                      if (imgs.data.includes(item)) return imgs.name;
-                    })}
+            <ul ref={screenRef} className="gallery__phone-screen">
+              {imgs.map(item => (
+                <li key={item} className="gallery__post">
+                  <div className="gallery__post-head">
+                    <div style={{ backgroundColor: '#000000' }}></div>
+                    <p>
+                      {instaImages.map(imgs => {
+                        if (imgs.data.includes(item)) return imgs.name;
+                      })}
+                    </p>
+                    <p>...</p>
+                  </div>
+                  <div className="gallery__post-photos">
+                    <img onDoubleClick={like} loading="lazy" src={item} alt="photo" />
+                    <AiFillHeart />
+                  </div>
+                  <div className="gallery__post-icons">
+                    <AiFillHeart onClick={like} />
+                    <img loading="lazy" src={comment} alt="comment" />
+                    <img loading="lazy" src={share} alt="share" />
+                    <img loading="lazy" src={flag} alt="flag" />
+                  </div>
+                  <p className="gallery__post-likes">
+                    <span>{Math.floor(Math.random() * 1000)}</span> {getText('likes')}
                   </p>
-                  <p>...</p>
-                </div>
-                <div className="gallery__post-photos">
-                  <img onDoubleClick={like} loading="lazy" src={item} alt="photo" />
-                  <AiFillHeart />
-                </div>
-                <div className="gallery__post-icons">
-                  <AiFillHeart onClick={like} />
-                  <img loading="lazy" src={comment} alt="comment" />
-                  <img loading="lazy" src={share} alt="share" />
-                  <img loading="lazy" src={flag} alt="flag" />
-                </div>
-                <p className="gallery__post-likes">
-                  <span>{Math.floor(Math.random() * 1000)}</span> {getText('likes')}
-                </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </GallerySection>
+    );
+  else
+    return (
+      <GallerySection>
+        <div className="container gallery__container">
+          <ul className="mobile-gallery__list">
+            {imgs.map(item => (
+              <li key={item}>
+                <img src={item} alt={item} />
               </li>
             ))}
           </ul>
         </div>
-      </div>
-    </GallerySection>
-  );
+      </GallerySection>
+    );
 };
