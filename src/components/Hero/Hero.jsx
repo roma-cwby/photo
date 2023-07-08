@@ -1,5 +1,4 @@
 import { HeroSection } from './Hero.styled';
-import bg from '../../img/24.jpg';
 
 export const Hero = () => {
   return (

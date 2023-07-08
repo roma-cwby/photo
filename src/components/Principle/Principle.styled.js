@@ -18,13 +18,13 @@ export const PrinciplesSection = styled.section`
       }
 
       h3 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 200;
         color: var(--black-color);
         margin-bottom: 30px;
 
         @media (min-width: 768px) {
-          font-size: 25px;
+          font-size: 30px;
         }
       }
 
