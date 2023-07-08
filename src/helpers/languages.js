@@ -5,6 +5,10 @@ const text = {
     en: 'About',
     ua: 'Про',
   },
+  principles: {
+    en: 'Pinciples',
+    ua: 'Принципи',
+  },
   gallery: {
     en: 'Gallery',
     ua: 'Галерея',

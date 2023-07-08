@@ -1,56 +1,22 @@
 import { PrinciplesSection } from './Principle.styled';
 import { getText } from '../../helpers/languages';
-import img1 from '../../img/5.jpg';
-import img2 from '../../img/12.jpg';
-import img3 from '../../img/22.jpg';
-import { useEffect, useRef } from 'react';
+import img from '../../img/5.jpg';
 
 export const Principles = () => {
-  const textRef = useRef();
-
-  function scroll(e) {
-    if (
-      e.target.scrollingElement.scrollTop >=
-      textRef.current.offsetTop - textRef.current.offsetHeight
-    ) {
-      textRef.current.classList.add('show');
-      window.removeEventListener('scroll', scroll);
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', scroll);
-
-    return () => {
-      window.removeEventListener('scroll', scroll);
-    };
-  }, [scroll]);
-
   return (
     <PrinciplesSection>
-      <div onScroll={scroll} className="container principles__container">
-        <ul className="principles__list">
-          <li className="item__title">
-            <h2>{getText('principlesTitle')}</h2>
-          </li>
-          <li className="item__photo">
-            <img src={img1} alt="pirinciples" />
-          </li>
-          <li className="item__photo">
-            <img src={img2} alt="pirinciples" />
-          </li>
-          <li ref={textRef} className="item__text" style={{ backgroundImage: `url(${img3})` }}>
-            <p>{getText('principlesCard1')}</p>
-
-            <p>{getText('principlesCard2')}</p>
-
-            <p>{getText('principlesCard3')}</p>
-
-            <p>{getText('principlesCard4')}</p>
-
-            <p>{getText('principlesCard5')}</p>
-          </li>
-        </ul>
+      <div className="container principles__container">
+        <div className="principles__text">
+          <h3>{getText('principlesTitle')}</h3>
+          <ul>
+            <li>{getText('principlesCard1')}</li>
+            <li>{getText('principlesCard2')}</li>
+            <li>{getText('principlesCard3')}</li>
+            <li>{getText('principlesCard4')}</li>
+            <li>{getText('principlesCard5')}</li>
+          </ul>
+        </div>
+        <img src={img} alt="principles" />
       </div>
     </PrinciplesSection>
   );

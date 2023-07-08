@@ -6,10 +6,7 @@ export const HeroSection = styled.section`
 
   overflow: hidden;
 
-  background-position: top;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: transparent;
 
   .hero__container {
     min-height: inherit;

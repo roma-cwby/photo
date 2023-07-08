@@ -3,7 +3,7 @@ import bg from '../../img/24.jpg';
 
 export const Hero = () => {
   return (
-    <HeroSection style={{ backgroundImage: `linear-gradient(#00000040, #00000040) , url(${bg})` }}>
+    <HeroSection>
       <div className="container hero__container">
         <h1 className="hero__title">
           Liliia Antoliak <br /> <span>Your personal photographer in London</span>

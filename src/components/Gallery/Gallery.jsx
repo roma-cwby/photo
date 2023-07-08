@@ -1,5 +1,6 @@
 import { GallerySection } from './Gallery.styled';
 import { getText } from '../../helpers/languages';
+import debounce from 'lodash.debounce';
 import { useRef } from 'react';
 
 import { CiBatteryFull } from 'react-icons/ci';
@@ -42,6 +43,10 @@ export const Gallery = () => {
 
     e.target.closest('li').classList.toggle('like');
   }
+
+  const mobileGalleryScroll = debounce(e => {
+    console.log(e);
+  }, 500);
 
   if (window.screen.width >= 768)
     return (
@@ -99,7 +104,7 @@ export const Gallery = () => {
     return (
       <GallerySection>
         <div className="container gallery__container">
-          <ul className="mobile-gallery__list">
+          <ul onScrollCapture={mobileGalleryScroll} className="mobile-gallery__list">
             {imgs.map(item => (
               <li key={item}>
                 <img src={item} alt={item} />

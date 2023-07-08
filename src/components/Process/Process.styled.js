@@ -14,13 +14,13 @@ export const ProcessSection = styled.section`
     text-align: center;
     height: auto;
 
-    h2 {
+    /* h2 {
       color: var(--black-color);
       font-size: 40px;
       font-weight: 200;
 
       margin-bottom: 100px;
-    }
+    } */
 
     ul {
       display: flex;
