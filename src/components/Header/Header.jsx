@@ -44,7 +44,7 @@ export const Header = () => {
           <a href="#pricing" className="header__link">
             {getText('price')}
           </a>
-          <a href="/" className="header__link">
+          <a href="#contacts" className="header__link">
             {getText('contacts')}
           </a>
           <button

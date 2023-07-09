@@ -5,6 +5,8 @@ import { Principles } from './components/Principle/Principle';
 import { Process } from './components/Process/Process';
 import { Pricing } from './components/Pricing/Pricing';
 import { Gallery } from './components/Gallery/Gallery';
+import { Contacts } from './components/Contacts/Contacts';
+import { Footer } from './components/Footer/Footer';
 import { SectionTitle } from './components/SectionTitle/SectionTitle';
 import { getText } from './helpers/languages';
 
@@ -23,6 +25,8 @@ function App() {
       <SectionTitle title={getText('price')} />
       <Pricing />
       <SectionTitle title={getText('contacts')} />
+      <Contacts />
+      <Footer />
     </>
   );
 }

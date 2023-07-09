@@ -20,7 +20,7 @@ export const MobileNav = ({ menuRef, lan, changeLan, close }) => {
           <a onClick={close} href="#pricing" className="header__link">
             {getText('price')}
           </a>
-          <a onClick={close} href="/" className="header__link">
+          <a onClick={close} href="#contacts" className="header__link">
             {getText('contacts')}
           </a>
           <button

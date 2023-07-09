@@ -141,6 +141,10 @@ const text = {
     en: 'This can be a content shoot for you as a professional/your product to fill your profile for a month ahead',
     ua: 'Це може бути контент зйомка для вас як професіонала/ вашого продукту для заповнення профілю на місяць вперед',
   },
+  contactsTitle: {
+    en: 'Do you have any questions for me or do you need a consultation? Contact me in any convenient for you, I will be happy to answer all your questions and help you make your plans a reality',
+    ua: 'Якщо у вас залишились запитання чи вам потрібна консультація - зв’яжіться зі мною у будь-який зручний для вас спосіб. З радістю допоможу втілити ваші плани у реальність',
+  },
 };
 
 const lang = getLanguage() === 'ua' ? true : false;

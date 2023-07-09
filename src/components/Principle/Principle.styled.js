@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const PrinciplesSection = styled.section`
   background-color: #ffffff;
+  padding: 100px 0;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 
   .principles__container {
     display: flex;

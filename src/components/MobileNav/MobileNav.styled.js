@@ -7,6 +7,8 @@ export const MobileNavWrap = styled.div`
   width: 100%;
   z-index: -1;
 
+  padding: 20px 0 10px 0;
+
   display: block;
 
   background-color: #00000090;
@@ -24,9 +26,16 @@ export const MobileNavWrap = styled.div`
     transform: translateY(100%);
   }
 
-  .mobile-nav .header__link {
-    margin-right: 0;
-    text-align: center;
-    display: block;
+  .mobile-nav {
+    .header__link {
+      margin-right: 0;
+      text-align: center;
+      display: block;
+      text-shadow: none;
+
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
   }
 `;
