@@ -13,11 +13,11 @@ export const GallerySection = styled.section`
 
       li {
         overflow: hidden;
-        width: calc(100% / 3 - 10px);
+        width: calc(100% / 2 - 5px);
         margin-bottom: 10px;
 
         @media (min-width: 768px) {
-          width: calc(100% / 5 - 10px);
+          width: calc(100% / 5 - 8px);
         }
 
         img {

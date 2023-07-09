@@ -10,8 +10,8 @@ import i9 from './img/gallery/9.jpg';
 // import i10 from './img/gallery/10.jpg';
 // import i11 from './img/gallery/11.jpg';
 import i12 from './img/gallery/12.jpg';
-// import i13 from './img/gallery/13.jpg';
-// import i14 from './img/gallery/14.jpg';
+import i13 from './img/gallery/13.jpg';
+import i14 from './img/gallery/14.jpg';
 import i15 from './img/gallery/15.jpg';
 // import i16 from './img/gallery/16.jpg';
 import i17 from './img/gallery/17.jpg';
@@ -29,8 +29,31 @@ import i23 from './img/gallery/23.jpg';
 import i32 from './img/gallery/32.jpg';
 // import i33 from './img/gallery/33.jpg';
 // import i34 from './img/gallery/34.jpg';
-// import i35 from './img/gallery/35.jpg';
+import i35 from './img/gallery/35.jpg';
 import i36 from './img/gallery/36.jpg';
 // import i37 from './img/gallery/37.jpg';
+import i40 from './img/gallery/40.jpg';
+import i43 from './img/gallery/43.jpg';
 
-export const imgs = [i1, i2, i22, i3, i9, i23, i17, i8, i32, i15, i21, i36, i5, i18, i12];
+export const imgs = [
+  i1,
+  i13,
+  i2,
+  i43,
+  i35,
+  i22,
+  i3,
+  i9,
+  i23,
+  i17,
+  i8,
+  i32,
+  i15,
+  i40,
+  i21,
+  i36,
+  i5,
+  i14,
+  i18,
+  i12,
+];
