@@ -38,8 +38,12 @@ const text = {
     ua: 'Вітаю! Я Лілія - фотограф, який побачить та упіймає в моменті твою унікальність. Моя місія - розкрити справжнє у фотографії, показати глибину та закохати. Запрошую тебе до мене на зйомку! Поділись  своїми бажаннями і ми втілимо їх разом!',
   },
   principlesTitle: {
-    en: 'I am open to your ideas and inspired to explore new, interesting, unusual, special, and creative ones. Here are the principles I work by:',
-    ua: 'Я відкрита до ваших ідей, а також натхненна на пошук нових, цікавих та незвичних, особливих та креативних. Ось принципи за якими я працюю:',
+    en: 'I am open to your ideas and inspired to explore new, interesting, unusual, special, and creative ones',
+    ua: 'Я відкрита до ваших ідей, а також натхненна на пошук нових, цікавих та незвичних, особливих та креативних',
+  },
+  principlesTitle2: {
+    en: 'Here are the principles I work by:',
+    ua: 'Ось принципи за якими я працюю:',
   },
   principlesCard1: {
     en: 'I will help you choose an idea that fits your request, or we can discuss the idea you propose',

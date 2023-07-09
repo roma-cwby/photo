@@ -18,18 +18,47 @@ export const PrinciplesSection = styled.section`
       }
 
       h3 {
+        position: relative;
+
         font-size: 25px;
         font-weight: 200;
         color: var(--black-color);
         margin-bottom: 30px;
+        padding-bottom: 20px;
+
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+
+          transform: translateX(-50%);
+
+          content: '';
+          width: 30%;
+          height: 3px;
+
+          background-color: silver;
+        }
 
         @media (min-width: 768px) {
           font-size: 30px;
         }
       }
 
+      h4 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--black-color);
+        margin-bottom: 30px;
+
+        @media (min-width: 768px) {
+          font-size: 23px;
+        }
+      }
+
       ul {
-        padding-left: 15px;
+        padding: 20px 20px;
         border-left: 3px solid silver;
         list-style: inside;
 
