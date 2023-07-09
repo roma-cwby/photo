@@ -8,7 +8,7 @@ export const FooterSection = styled.footer`
   align-items: center;
   justify-content: center;
 
-  border-top: 1px solid #ff0000;
+  border-top: 1px solid #ffffff;
 
   a {
     color: white;
