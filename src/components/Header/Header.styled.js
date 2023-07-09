@@ -21,6 +21,7 @@ export const StyledHeader = styled.header`
 
   .header__container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     padding-top: 15px;
@@ -28,8 +29,9 @@ export const StyledHeader = styled.header`
   }
 
   .header__logo {
-    color: var(--header-link-color);
-    -webkit-text-stroke: 1px silver;
+    img {
+      height: 40px;
+    }
   }
 
   .header__nav {

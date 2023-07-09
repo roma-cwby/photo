@@ -11,8 +11,11 @@ export const FooterSection = styled.footer`
   border-top: 1px solid #ffffff;
 
   a {
-    color: white;
     margin-right: 20px;
+
+    img {
+      height: 40px;
+    }
   }
 
   p {
