@@ -24,8 +24,8 @@ export const StyledHeader = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .header__logo {
