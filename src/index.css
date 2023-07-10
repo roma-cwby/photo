@@ -1,7 +1,4 @@
 @import 'modern-normalize';
-/* @import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto:wght@400;500&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto:wght@400;500&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto:wght@400;500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 
 :root{
@@ -33,13 +30,13 @@ body {
   margin: 0;
   overflow-y: overlay;
 
-
-
   font-family: 
     'Ubuntu',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  transition: all var(--transition);
 
   background: linear-gradient(#00000040, #00000040) , url('./img/24.jpg');
   background-position: top;
