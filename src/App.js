@@ -16,15 +16,15 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <SectionTitle title={getText('principles')} />
+      <SectionTitle title={getText('principles')} position="5" />
       <Principles />
-      <SectionTitle title={getText('process')} />
+      <SectionTitle title={getText('process')} position="25" />
       <Process />
-      <SectionTitle title={getText('gallery')} />
+      <SectionTitle title={getText('gallery')} position="45" />
       <Gallery />
-      <SectionTitle title={getText('price')} />
+      <SectionTitle title={getText('price')} position="65" />
       <Pricing />
-      <SectionTitle title={getText('contacts')} />
+      <SectionTitle title={getText('contacts')} position="85" />
       <Contacts />
       <Footer />
     </>

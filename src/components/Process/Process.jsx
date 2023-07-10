@@ -11,7 +11,6 @@ export const Process = () => {
       }}
     >
       <div className="container section__container">
-        {/* <h2>{getText('processTitle')}</h2> */}
         <ul>
           <li>
             <span>1</span>

@@ -8,10 +8,8 @@ export const PhotoTitle = styled.div`
   width: 100%;
   height: 40vh;
 
-  background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 
   h2 {
     color: var(--white-color);

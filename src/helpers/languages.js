@@ -6,7 +6,7 @@ const text = {
     ua: 'Про',
   },
   principles: {
-    en: 'Pinciples',
+    en: 'Principles',
     ua: 'Принципи',
   },
   gallery: {
