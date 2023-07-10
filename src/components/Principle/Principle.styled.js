@@ -4,8 +4,12 @@ export const PrinciplesSection = styled.section`
   background-color: #ffffff;
   padding: 100px 0;
 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @media (min-width: 768px) {
-    padding: 20px 0;
+    padding: 50px 0;
   }
 
   @media (min-width: 1200px) {
@@ -17,7 +21,7 @@ export const PrinciplesSection = styled.section`
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--white-color);
+    background-color: transparent;
 
     .principles__text {
       width: 100%;

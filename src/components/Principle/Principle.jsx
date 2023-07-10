@@ -1,10 +1,15 @@
 import { PrinciplesSection } from './Principle.styled';
 import { getText } from '../../helpers/languages';
 import img from '../../img/5.jpg';
+import bg from '../../img/gallery/43.jpg';
 
 export const Principles = () => {
   return (
-    <PrinciplesSection>
+    <PrinciplesSection
+      style={{
+        backgroundImage: `linear-gradient( #ffffff 0%, transparent 100%) , url(${bg})`,
+      }}
+    >
       <div className="container principles__container">
         <div className="principles__text">
           <h3>{getText('principlesTitle')}</h3>
