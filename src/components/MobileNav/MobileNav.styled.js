@@ -11,7 +11,7 @@ export const MobileNavWrap = styled.div`
 
   display: block;
 
-  background-color: #00000090;
+  background-color: rgba(0, 0, 0, 0.8);
   /* backdrop-filter: blur(5px); */
 
   transition: transform 300ms linear;

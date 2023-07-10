@@ -5,7 +5,6 @@ import { getLanguage, setLanguage } from '../../helpers/localStorage';
 import { getText } from '../../helpers/languages';
 import ukFlag from '../../img/uk.jpg';
 import uaFlag from '../../img/ua.jpg';
-import logo from '../../img/logo.png';
 
 export const Header = () => {
   const mobMenuRef = useRef();
@@ -30,7 +29,7 @@ export const Header = () => {
     <StyledHeader ref={sectionRef}>
       <div className="container header__container">
         <a className="header__logo" href="/">
-          <img src={logo} alt="logo" />
+          Leyliant_ph
         </a>
         <nav className="header__nav">
           <a href="#about" className="header__link">

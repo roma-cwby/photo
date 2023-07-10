@@ -5,20 +5,30 @@ export const FooterSection = styled.footer`
   padding: 20px 0;
 
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 
   border-top: 1px solid #ffffff;
 
   a {
     margin-right: 20px;
+    font-family: 'Calligraffitti', 'sans-serif';
+    color: var(--header-link-color);
+    font-size: 20px;
+    font-weight: 700;
+    transition: color var(--transition);
 
-    img {
-      height: 40px;
+    @media (min-width: 768px) {
+      font-size: 27px;
+    }
+
+    &:hover {
+      color: var(--accent-color);
     }
   }
 
   p {
     color: var(--white-color);
+    font-size: 20px;
   }
 `;
