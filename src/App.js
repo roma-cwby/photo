@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <SectionTitle title={getText('principles')} position="10" />
+      <SectionTitle title={getText('principles')} position="8" />
       <Principles />
       <SectionTitle title={getText('process')} position="30" />
       <Process />

@@ -8,8 +8,9 @@ export const PhotoTitle = styled.div`
   width: 100%;
   height: 40vh;
 
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position-x: center; */
 
   h2 {
     color: var(--white-color);
