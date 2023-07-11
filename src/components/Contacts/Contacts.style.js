@@ -4,6 +4,7 @@ export const ContactsSection = styled.section`
   position: relative;
   padding-top: 100px;
   background-color: #101010;
+  background-repeat: no-repeat;
   overflow: hidden;
 
   img {
@@ -28,15 +29,15 @@ export const ContactsSection = styled.section`
       text-align: center;
       font-size: 20px;
       font-weight: 300;
-      margin-bottom: 100px;
+      margin: 0 0 100px 0;
       width: 100%;
 
       color: var(--white-color);
 
       @media (min-width: 768px) {
         font-size: 25px;
-
-        width: 50%;
+        width: 70%;
+        margin: 0 auto 100px auto;
       }
     }
   }
@@ -47,10 +48,6 @@ export const ContactsSection = styled.section`
     justify-content: center;
 
     width: 100%;
-
-    @media (min-width: 768px) {
-      width: 50%;
-    }
 
     a:not(:last-of-type) {
       margin-right: 20px;

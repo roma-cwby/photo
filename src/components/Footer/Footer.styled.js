@@ -8,8 +8,6 @@ export const FooterSection = styled.footer`
   align-items: baseline;
   justify-content: center;
 
-  border-top: 1px solid #ffffff;
-
   a {
     margin-right: 20px;
     font-family: 'Calligraffitti', 'sans-serif';

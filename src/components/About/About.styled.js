@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const AboutSection = styled.section`
   min-height: 100vh;
 
-  background: linear-gradient(45deg, #000010, #100010);
+  background: linear-gradient(transparent 10%, #ffffff 80%);
 
   .about__container {
     min-height: inherit;
@@ -31,17 +31,32 @@ export const AboutSection = styled.section`
       }
 
       h2 {
+        position: relative;
         text-align: center;
         font-weight: 300;
         font-size: 50px;
-        color: var(--white-color);
+        color: var(--black-color);
         margin-bottom: 30px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+
+          transform: translateX(-50%);
+
+          width: 10%;
+          height: 2px;
+
+          background-color: var(--black-color);
+        }
       }
 
       p {
         font-size: 20px;
         font-weight: 300;
-        color: #ffffff99;
+        color: var(--black-color);
         margin-bottom: 30px;
       }
 
@@ -59,6 +74,13 @@ export const AboutSection = styled.section`
         a {
           svg {
             width: 50px;
+            fill: var(--black-color);
+
+            transition: fill var(--transition);
+
+            &:hover {
+              fill: var(--accent-color);
+            }
 
             @media (min-width: 768px) {
               width: 40px;
@@ -72,18 +94,6 @@ export const AboutSection = styled.section`
 
         a:not(:last-of-type) {
           margin-right: 15px;
-        }
-      }
-
-      img {
-        width: 100%;
-        height: 180px;
-
-        object-fit: cover;
-        object-position: center;
-
-        @media (min-width: 1200px) {
-          height: 200px;
         }
       }
     }

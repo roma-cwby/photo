@@ -8,18 +8,12 @@ export const PrinciplesSection = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: 768px) {
-    padding: 50px 0;
-  }
-
-  @media (min-width: 1200px) {
-    padding: 0;
-  }
+  padding: 50px 0;
 
   .principles__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     background-color: transparent;
 
@@ -27,7 +21,7 @@ export const PrinciplesSection = styled.section`
       width: 100%;
 
       @media (min-width: 768px) {
-        width: 50%;
+        width: 75%;
       }
 
       h3 {
@@ -48,9 +42,9 @@ export const PrinciplesSection = styled.section`
 
           content: '';
           width: 30%;
-          height: 3px;
+          height: 2px;
 
-          background-color: silver;
+          background-color: var(--black-color);
         }
 
         @media (min-width: 768px) {
@@ -72,7 +66,7 @@ export const PrinciplesSection = styled.section`
 
       ul {
         padding: 20px 20px;
-        border-left: 3px solid silver;
+        border-left: 2px solid var(--black-color);
         list-style: inside;
 
         li {
@@ -81,7 +75,7 @@ export const PrinciplesSection = styled.section`
           font-weight: 300;
 
           @media (min-width: 768px) {
-            font-size: 17px;
+            font-size: 19px;
           }
 
           &:not(:last-of-type) {

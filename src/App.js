@@ -18,13 +18,13 @@ function App() {
       <About />
       <SectionTitle title={getText('principles')} position="8" />
       <Principles />
-      <SectionTitle title={getText('process')} position="30" />
+      <SectionTitle title={getText('process')} position="40" />
       <Process />
-      <SectionTitle title={getText('gallery')} position="50" />
+      <SectionTitle title={getText('gallery')} position="60" />
       <Gallery />
-      <SectionTitle title={getText('price')} position="70" />
+      <SectionTitle title={getText('price')} position="75" />
       <Pricing />
-      <SectionTitle title={getText('contacts')} position="90" />
+      <SectionTitle title={getText('contacts')} position="100" />
       <Contacts />
       <Footer />
     </>

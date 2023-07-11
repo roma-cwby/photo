@@ -1,6 +1,5 @@
 import { AboutSection } from './About.styled';
 import img from '../../img/27.jpg';
-import textImg from '../../img/20.jpg';
 import { getText } from '../../helpers/languages';
 import { Social } from '../Social/Social';
 
@@ -16,7 +15,6 @@ export const About = () => {
           </h2>
           <p>{getText('aboutText')}</p>
           <Social Class="about__social" />
-          <img src={textImg} alt="me" />
         </div>
       </div>
     </AboutSection>

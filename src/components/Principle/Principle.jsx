@@ -1,6 +1,5 @@
 import { PrinciplesSection } from './Principle.styled';
 import { getText } from '../../helpers/languages';
-import img from '../../img/5.jpg';
 import bg from '../../img/gallery/43.jpg';
 
 export const Principles = () => {
@@ -22,7 +21,6 @@ export const Principles = () => {
             <li>{getText('principlesCard5')}</li>
           </ul>
         </div>
-        <img src={img} alt="principles" />
       </div>
     </PrinciplesSection>
   );
