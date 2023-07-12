@@ -6,7 +6,7 @@ export const Principles = () => {
   return (
     <PrinciplesSection
       style={{
-        backgroundImage: `linear-gradient( #ffffff 0%, transparent 100%) , url(${bg})`,
+        backgroundImage: `linear-gradient( rgba(255, 255, 255, 0.8) ,  rgba(255, 255, 255, 0.5)) , url(${bg})`,
       }}
     >
       <div className="container principles__container">
