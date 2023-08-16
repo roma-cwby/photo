@@ -72,5 +72,4 @@ export const imgs = [
   i14,
   i18,
   i57,
-  i12,
 ];
