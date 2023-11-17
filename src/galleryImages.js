@@ -54,7 +54,6 @@ export const imgs = [
   i43,
   i22,
   i54,
-
   i51,
   i9,
   i23,
