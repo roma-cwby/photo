@@ -3,10 +3,11 @@
 
 :root{
   --transition: 300ms linear;
-  --header-link-color: darkgrey;
+  --header-link-color: #ffffff;
   --white-color: #ffffff;
   --black-color: #000000;
-  --accent-color: rgb(255, 81, 0);
+  /* --accent-color: rgb(255, 81, 0); */
+  --accent-color: red;
   --bg-black-color: #000000;
   --bg-pink-color: #b80d3b;
 }
@@ -28,7 +29,7 @@ body::-webkit-scrollbar {
 body {
   min-height: 100vh;
   margin: 0;
-  overflow-y: overlay;
+  overflow: hidden;
 
   font-family: 
     'Ubuntu',
@@ -36,8 +37,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(#00000040, #00000040) , url('./img/24.jpg');
-  background-position: top;
+  background: linear-gradient(#00000040, #00000040) , url('./img/gallery/61.jpg');
+  background-position: center 10%;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -71,7 +72,7 @@ img {
 #root{
   min-height: inherit;
   overflow-x: hidden;
-  overflow-y: overlay;
+  overflow-y: cover;
 
 }
 

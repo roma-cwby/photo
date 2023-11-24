@@ -8,7 +8,7 @@ export const Contacts = () => {
     <ContactsSection
       id="contacts"
       style={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${bg}) center 15% / cover no-repeat`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${bg}) center 0 / cover no-repeat`,
       }}
     >
       <div className="container contacts__container">

@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const AboutSection = styled.section`
-  min-height: 100vh;
-
-  background: linear-gradient(transparent 10%, #ffffff 80%);
+  min-height: 100%;
+  background: linear-gradient(transparent 10%, #ffffff 30%);
 
   .about__container {
     min-height: inherit;
@@ -15,7 +14,7 @@ export const AboutSection = styled.section`
     }
 
     img {
-      width: 100%;
+      height: auto;
       margin-bottom: 20px;
       @media (min-width: 768px) {
         width: 50%;

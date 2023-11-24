@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const GallerySection = styled.section`
-  background-color: silver;
+  background-color: transparent;
 
   .gallery__container {
     ul {

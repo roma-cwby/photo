@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const PricingSection = styled.section`
-  background-color: #101010;
+  height: 100%;
+  background-color: transparent;
 
   .pricing__container {
     text-align: center;
@@ -20,6 +21,7 @@ export const PricingSection = styled.section`
       flex-wrap: wrap;
 
       width: 100%;
+      padding-bottom: 100px;
 
       li {
         width: 100%;
@@ -27,7 +29,7 @@ export const PricingSection = styled.section`
         padding: 20px 20px 40px 20px;
 
         border-radius: 50px;
-        background-color: #101010;
+        background-color: #101010dd;
         box-shadow: 5px 5px 10px #000000, -5px -5px 10px #202020;
 
         &:not(:last-of-type) {

@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
 export const ContactsSection = styled.section`
+  height: 100%;
   position: relative;
   padding-top: 100px;
   background-color: #101010;
   background-repeat: no-repeat;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     display: none;
@@ -24,6 +29,8 @@ export const ContactsSection = styled.section`
   }
 
   .contacts__container {
+    height: auto;
+
     h2 {
       padding: 0 10px;
       text-align: center;

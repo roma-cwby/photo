@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const ProcessSection = styled.section`
+  min-height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
 
@@ -12,7 +14,8 @@ export const ProcessSection = styled.section`
 
   .section__container {
     text-align: center;
-    height: auto;
+    height: 100%;
+    width: 100%;
 
     ul {
       display: flex;
@@ -20,6 +23,7 @@ export const ProcessSection = styled.section`
       justify-content: space-around;
       flex-wrap: wrap;
 
+      height: 100%;
       width: 100%;
 
       li {

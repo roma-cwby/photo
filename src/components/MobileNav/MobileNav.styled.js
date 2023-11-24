@@ -16,14 +16,14 @@ export const MobileNavWrap = styled.div`
 
   transition: transform 300ms linear;
 
-  transform: translateY(-201%);
+  transform: translateY(201%);
 
   @media (min-width: 768px) {
     display: none;
   }
 
   &.open {
-    transform: translateY(100%);
+    transform: translateY(-53px);
   }
 
   .mobile-nav {

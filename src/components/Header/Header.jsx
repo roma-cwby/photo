@@ -6,7 +6,7 @@ import { getText } from '../../helpers/languages';
 import ukFlag from '../../img/uk.jpg';
 import uaFlag from '../../img/ua.jpg';
 
-export const Header = () => {
+export const Header = ({ Click }) => {
   const mobMenuRef = useRef();
   const sectionRef = useRef();
   const btnRef = useRef();
@@ -27,24 +27,24 @@ export const Header = () => {
 
   return (
     <StyledHeader ref={sectionRef}>
-      <div className="container header__container">
-        <a className="header__logo" href="/">
+      <div className="container header__container" onClick={Click}>
+        <a className="header__logo" id="hero">
           Leyliant_ph
         </a>
         <nav className="header__nav">
-          <a href="#about" className="header__link">
+          <a id="about" className="header__link">
             {getText('about')}
           </a>
-          <a href="#process" className="header__link">
+          <a id="process" className="header__link">
             {getText('process')}
           </a>
-          <a href="#gallery" className="header__link">
+          <a id="gallery" className="header__link">
             {getText('gallery')}
           </a>
-          <a href="#pricing" className="header__link">
+          <a id="pricing" className="header__link">
             {getText('price')}
           </a>
-          <a href="#contacts" className="header__link">
+          <a id="contacts" className="header__link">
             {getText('contacts')}
           </a>
           <button
@@ -61,7 +61,13 @@ export const Header = () => {
           type="button"
         ></button>
       </div>
-      <MobileNav menuRef={mobMenuRef} lan={lang} changeLan={changeLanguage} close={toggleOpen} />
+      <MobileNav
+        menuRef={mobMenuRef}
+        lan={lang}
+        changeLan={changeLanguage}
+        close={toggleOpen}
+        MobileMenuClick={Click}
+      />
     </StyledHeader>
   );
 };

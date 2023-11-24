@@ -2,17 +2,18 @@ import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 10;
 
   font-size: 20px;
-  background-color: transparent;
+  background: linear-gradient(transparent 5%, #000000);
+  /* background-color: transparent; */
 
   transition: background-color var(--transition), background-filter var(--transition);
 
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
 
   &.open {
     background-color: rgba(0, 0, 0, 0.8);
@@ -41,6 +42,7 @@ export const StyledHeader = styled.header`
 
     &:hover {
       color: var(--accent-color);
+      cursor: pointer;
     }
   }
 
@@ -55,7 +57,7 @@ export const StyledHeader = styled.header`
 
   .header__link {
     color: var(--header-link-color);
-    font-weight: 600;
+    font-weight: 400;
     /* -webkit-text-stroke: 1px silver; */
 
     transition: color 300ms linear;
@@ -65,6 +67,7 @@ export const StyledHeader = styled.header`
     &:focus {
       -webkit-text-stroke: 0;
       color: var(--accent-color);
+      cursor: pointer;
     }
   }
   /* 
