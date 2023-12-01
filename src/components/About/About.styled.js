@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const AboutSection = styled.section`
   min-height: 100%;
-  background: linear-gradient(transparent 10%, #ffffff 30%);
+  background: linear-gradient(transparent 10%, #000000 30%);
 
   .about__container {
     min-height: inherit;
@@ -14,10 +14,19 @@ export const AboutSection = styled.section`
     }
 
     img {
-      height: auto;
       margin-bottom: 20px;
+
+      width: 100%;
+
       @media (min-width: 768px) {
-        width: 50%;
+        max-height: auto;
+        max-width: 50%;
+        margin: 0;
+      }
+
+      @media (min-width: 768px) {
+        max-height: 80vh;
+        width: auto;
         margin: 0;
       }
     }
@@ -34,7 +43,7 @@ export const AboutSection = styled.section`
         text-align: center;
         font-weight: 300;
         font-size: 50px;
-        color: var(--black-color);
+        color: var(--white-color);
         margin-bottom: 30px;
 
         &::before {
@@ -55,7 +64,7 @@ export const AboutSection = styled.section`
       p {
         font-size: 20px;
         font-weight: 300;
-        color: var(--black-color);
+        color: var(--white-color);
         margin-bottom: 30px;
       }
 
@@ -73,7 +82,7 @@ export const AboutSection = styled.section`
         a {
           svg {
             width: 50px;
-            fill: var(--black-color);
+            fill: var(--white-color);
 
             transition: fill var(--transition);
 
