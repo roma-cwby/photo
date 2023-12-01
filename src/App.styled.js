@@ -23,7 +23,7 @@ export const AppList = styled.ul`
     width: inherit;
     height: inherit;
 
-    transition: all 0.5s ease-out 100ms;
+    transition: top 0.5s ease-out 100ms;
 
     background-color: transparent;
 
