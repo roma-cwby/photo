@@ -27,9 +27,11 @@ export const MobileNavWrap = styled.div`
   }
 
   .mobile-nav {
+    padding-right: 20px;
+
     .header__link {
       margin-right: 0;
-      text-align: center;
+      text-align: right;
       display: block;
       text-shadow: none;
 

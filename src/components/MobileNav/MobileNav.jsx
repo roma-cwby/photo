@@ -20,6 +20,9 @@ export const MobileNav = ({ menuRef, lan, changeLan, close, MobileMenuClick }) =
           <a onClick={close} id="pricing" className="header__link">
             {getText('price')}
           </a>
+          <a onClick={close} id="terms" className="header__link">
+            {getText('terms')}
+          </a>
           <a onClick={close} id="contacts" className="header__link">
             {getText('contacts')}
           </a>

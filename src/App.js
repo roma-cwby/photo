@@ -7,6 +7,7 @@ import { Process } from './components/Process/Process';
 import { Pricing } from './components/Pricing/Pricing';
 import { Gallery } from './components/Gallery/Gallery';
 import { Contacts } from './components/Contacts/Contacts';
+import { Terms } from './components/Terms/Terms';
 // import { Footer } from './components/Footer/Footer';
 // import { SectionTitle } from './components/SectionTitle/SectionTitle';
 // import { getText } from './helpers/languages';
@@ -38,7 +39,7 @@ function App() {
   return (
     <>
       <AppList ref={listRef}>
-        <li className="show app-list__item" id="hero">
+        <li className="app-list__item" id="hero">
           <Hero />
         </li>
         <li className="app-list__item" id="about">
@@ -55,6 +56,9 @@ function App() {
         </li>
         <li className="app-list__item" id="pricing">
           <Pricing />
+        </li>
+        <li className="show app-list__item" id="terms">
+          <Terms />
         </li>
         <li className="app-list__item" id="contacts">
           <Contacts />

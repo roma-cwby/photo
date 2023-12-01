@@ -44,6 +44,9 @@ export const Header = ({ Click }) => {
           <a id="pricing" className="header__link">
             {getText('price')}
           </a>
+          <a id="terms" className="header__link">
+            {getText('terms')}
+          </a>
           <a id="contacts" className="header__link">
             {getText('contacts')}
           </a>

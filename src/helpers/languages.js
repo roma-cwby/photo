@@ -21,6 +21,10 @@ const text = {
     en: 'Pricing',
     ua: 'Ціни',
   },
+  terms: {
+    en: 'Terms',
+    ua: 'Умови',
+  },
   contacts: {
     en: 'Contacts',
     ua: 'Контакти',
