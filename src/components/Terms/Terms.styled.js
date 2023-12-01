@@ -6,9 +6,7 @@ export const TermsSection = styled.section`
   text-align: center;
   padding-bottom: 100px;
 
-  background-color: #00000070;
-
-  /* background-color: #ffffff50; */
+  background-color: #000000bb;
 
   .terms__container {
     h2 {
@@ -44,7 +42,7 @@ export const TermsSection = styled.section`
         padding: 10px 5px;
         text-align: left;
 
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 300;
 
         color: var(--white-color);

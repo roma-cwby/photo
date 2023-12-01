@@ -7,7 +7,7 @@ export const Process = () => {
     <ProcessSection
       id="process"
       style={{
-        backgroundImage: `linear-gradient( #ffffff90 0%, transparent 100%) , url(${bgImg})`,
+        backgroundImage: `radial-gradient( transparent, #ffffffaa) , url(${bgImg})`,
       }}
     >
       <div className="container section__container">

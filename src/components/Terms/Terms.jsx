@@ -13,20 +13,19 @@ export const Terms = () => {
             <li>{getText('termsText6')}</li>
             <li>{getText('termsText8')}</li>
             <li>{getText('termsText10')}</li>
-            <li>{getText('termsText12')}</li>
-            <li>{getText('termsText14')}</li>
-            <li>{getText('termsText9')}</li>
             <li>{getText('termsText1')}</li>
+            <li>{getText('termsText14')}</li>
+            <li>{getText('termsText15')}</li>
           </ul>
           <ul>
-            <li>{getText('termsText1')}</li>
+            <li>{getText('termsText9')}</li>
             <li>{getText('termsText3')}</li>
             <li>{getText('termsText5')}</li>
             <li>{getText('termsText7')}</li>
+            <li>{getText('termsText12')}</li>
             <li>{getText('termsText16')}</li>
             <li>{getText('termsText11')}</li>
             <li>{getText('termsText13')}</li>
-            <li>{getText('termsText15')}</li>
             <li>{getText('termsText17')}</li>
           </ul>
         </div>
