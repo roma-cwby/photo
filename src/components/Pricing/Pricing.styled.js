@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const PricingSection = styled.section`
   height: auto;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   background-color: transparent;
 
   .pricing__container {
