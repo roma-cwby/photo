@@ -14,7 +14,7 @@ export const AppList = styled.ul`
   .app-list__item {
     position: absolute;
 
-    top: 101vh;
+    top: 99vh;
     left: 0;
     z-index: 10;
 
@@ -22,6 +22,7 @@ export const AppList = styled.ul`
 
     width: inherit;
     height: inherit;
+    min-height: inherit;
 
     transition: top 0.5s ease-out 100ms;
 

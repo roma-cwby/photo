@@ -98,12 +98,12 @@ const text = {
     ua: 'Пакет 1',
   },
   package11: {
-    en: '1 hour of shooting',
-    ua: '1 год зйомки',
+    en: '30 minutes of shooting',
+    ua: '30 хв зйомки',
   },
   package12: {
-    en: '30 photos with color correction and professional retouching',
-    ua: '30 фото в кольорокорекції та професійній ретуші',
+    en: '20 photos fully retouched',
+    ua: '20 фото в повній ретуші',
   },
   package13: {
     en: 'The shooting includes one look, one location, and studio rental is paid separately',
@@ -114,12 +114,12 @@ const text = {
     ua: 'Пакет 2',
   },
   package21: {
-    en: '2 hours of shooting',
-    ua: '2 год зйомки',
+    en: '1 hours of shooting',
+    ua: '1 год зйомки',
   },
   package22: {
-    en: '50 photos with color correction and professional retouching',
-    ua: '50 фото в кольорокорекції та професійній ретуші',
+    en: '40 photos fully retouched',
+    ua: '40 фото в повній ретуші',
   },
   package23: {
     en: 'The shooting includes 1/2 looks, one/two locations, and studio rental is paid separately',
@@ -130,12 +130,12 @@ const text = {
     ua: 'Пакет 3',
   },
   package31: {
-    en: '4 hours of shooting',
-    ua: '4 год зйомки',
+    en: '2 hours of shooting',
+    ua: '2 год зйомки',
   },
   package32: {
-    en: '70 photos with color correction and professional retouching',
-    ua: '70 фото в кольорокорекції та професійній ретуші',
+    en: '80 photos fully retouched',
+    ua: '80 фото в повній ретуші',
   },
   package33: {
     en: 'The shooting includes portrait and product photography, 2/3 looks, studio + 1 location, and studio rental is paid separately',
@@ -143,7 +143,11 @@ const text = {
   },
   package34: {
     en: 'This can be a content shoot for you as a professional/your product to fill your profile for a month ahead',
-    ua: 'Це може бути контент зйомка для вас як професіонала/ вашого продукту для заповнення профілю на місяць вперед',
+    ua: 'Це може бути контент зйомка для вас як професіонала/вашого продукту для заповнення профілю на місяць вперед',
+  },
+  packagePlus: {
+    en: 'Additional 10 photos to the package: color correction only - 15£, fully retouched - 25£',
+    ua: 'Додаткові 10 фото до пакету: лише в кольорокорекції - 15£, в повній ретуші - 25£',
   },
   contactsTitle: {
     en: 'Do you have any questions for me or do you need a consultation? Contact me in any convenient for you, I will be happy to answer all your questions and help you make your plans a reality',
