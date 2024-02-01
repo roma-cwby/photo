@@ -3,7 +3,7 @@ import { getText } from '../../helpers/languages';
 import { BiTime } from 'react-icons/bi';
 import { MdPhotoCamera } from 'react-icons/md';
 import { MdLocationOn } from 'react-icons/md';
-import { BsFillClipboardCheckFill } from 'react-icons/bs';
+// import { BsFillClipboardCheckFill } from 'react-icons/bs';
 
 export const Pricing = () => {
   return (
@@ -58,10 +58,10 @@ export const Pricing = () => {
               <MdLocationOn />
               {getText('package33')}
             </p>
-            <p>
+            {/* <p>
               <BsFillClipboardCheckFill />
               {getText('package34')}
-            </p>
+            </p> */}
           </li>
         </ul>
         <p className="pricing-plus">{getText('packagePlus')}</p>

@@ -138,13 +138,13 @@ const text = {
     ua: '80 фото в повній ретуші',
   },
   package33: {
-    en: 'The shooting includes portrait and product photography, 2/3 looks, studio + 1 location, and studio rental is paid separately',
-    ua: 'Зйомка передбачає портретну/предметну зйомку, 2/3 образи, студія +1 локація, студія оплачується окремо',
+    en: 'The shooting includes 2/3 looks, studio rental is paid separately',
+    ua: 'Зйомка передбачає 2/3 образи, студія оплачується окремо',
   },
-  package34: {
-    en: 'This can be a content shoot for you as a professional/your product to fill your profile for a month ahead',
-    ua: 'Це може бути контент зйомка для вас як професіонала/вашого продукту для заповнення профілю на місяць вперед',
-  },
+  // package34: {
+  //   en: 'This can be a content shoot for you as a professional/your product to fill your profile for a month ahead',
+  //   ua: 'Це може бути контент зйомка для вас як професіонала/вашого продукту для заповнення профілю на місяць вперед',
+  // },
   packagePlus: {
     en: 'Additional 10 photos to the package: color correction only - 15£, fully retouched - 25£',
     ua: 'Додаткові 10 фото до пакету: лише в кольорокорекції - 15£, в повній ретуші - 25£',
