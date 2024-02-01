@@ -15,7 +15,7 @@ import i14 from './img/gallery/14.jpg';
 import i15 from './img/gallery/15.jpg';
 // import i16 from './img/gallery/16.jpg';
 // import i17 from './img/gallery/17.jpg';
-import i18 from './img/gallery/18.jpg';
+// import i18 from './img/gallery/18.jpg';
 // import i19 from './img/gallery/19.jpg';
 // import i20 from './img/gallery/20.jpg';
 import i21 from './img/gallery/21.jpg';
@@ -45,30 +45,43 @@ import i57 from './img/gallery/57.jpg';
 // import i59 from './img/gallery/59.jpg';
 import i60 from './img/gallery/60.jpg';
 import i61 from './img/gallery/61.jpg';
+import i62 from './img/gallery/62.jpg';
+import i63 from './img/gallery/63.jpg';
+import i64 from './img/gallery/64.jpg';
+import i65 from './img/gallery/65.jpg';
+import i66 from './img/gallery/66.jpg';
+import i67 from './img/gallery/67.jpg';
+import i68 from './img/gallery/68.jpg';
 
 export const imgs = [
   i1,
   i50,
   i13,
   i2,
+  i62,
   i43,
   i22,
+  i65,
   i54,
   i51,
   i9,
   i23,
+  i63,
   i53,
   i8,
   i15,
+  i67,
   i56,
   i40,
   i60,
   i21,
   i55,
+  i64,
   i36,
   i61,
+  i66,
   i5,
   i14,
-  i18,
+  i68,
   i57,
 ];

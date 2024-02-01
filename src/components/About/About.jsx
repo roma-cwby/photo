@@ -1,5 +1,5 @@
 import { AboutSection } from './About.styled';
-import img from '../../img/27.jpg';
+import img from '../../img/about.jpg';
 import { getText } from '../../helpers/languages';
 import { Social } from '../Social/Social';
 
