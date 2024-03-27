@@ -98,12 +98,12 @@ const text = {
     ua: 'Пакет 1',
   },
   package11: {
-    en: '30 minutes of shooting',
-    ua: '30 хв зйомки',
+    en: '30/40 minutes of shooting',
+    ua: '30/40 хв зйомки',
   },
   package12: {
-    en: '20 photos fully retouched',
-    ua: '20 фото в повній ретуші',
+    en: '30 photos fully retouched',
+    ua: '30 фото в повній ретуші',
   },
   package13: {
     en: 'The shooting includes one look, one location, and studio rental is paid separately',
@@ -114,12 +114,12 @@ const text = {
     ua: 'Пакет 2',
   },
   package21: {
-    en: '1 hours of shooting',
-    ua: '1 год зйомки',
+    en: '1/1.15 hours of shooting',
+    ua: '1/1.15 год зйомки',
   },
   package22: {
-    en: '40 photos fully retouched',
-    ua: '40 фото в повній ретуші',
+    en: '50 photos fully retouched',
+    ua: '50 фото в повній ретуші',
   },
   package23: {
     en: 'The shooting includes 1/2 looks, one/two locations, and studio rental is paid separately',

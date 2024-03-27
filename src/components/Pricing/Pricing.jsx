@@ -13,7 +13,7 @@ export const Pricing = () => {
         <ul>
           <li>
             <h3 style={{ borderBottom: `1px solid yellow` }}>{getText('package1Title')}</h3>
-            <h4>60£</h4>
+            <h4>80£</h4>
             <p>
               <BiTime />
               {getText('package11')}
@@ -29,7 +29,7 @@ export const Pricing = () => {
           </li>
           <li>
             <h3 style={{ borderBottom: `1px solid blue` }}>{getText('package2Title')}</h3>
-            <h4>100£</h4>
+            <h4>120£</h4>
             <p>
               <BiTime />
               {getText('package21')}
